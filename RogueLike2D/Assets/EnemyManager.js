@@ -13,5 +13,6 @@ function Start ()
 function Spawn()
 {
 	var spawnPintIndex : int = Random.Range(0, spawnPoint.Length);
-	Instantiate(enemy[spawnPintIndex], transform.position, transform.rotation);
+	var posicion : Vector3 = Vector3( Random.Range(-4,6), Random.Range(-4,6));
+	Instantiate(enemy[spawnPintIndex],posicion, transform.rotation);
 }
